@@ -55,3 +55,9 @@ alias bashrc='. ~/.bashrc'
 ```
 alias restartnginx='sudo systemctl reload nginx'
 ```
+
+**get cwd to clipboard on cmder windows**
+
+```
+alias getcd=cd $b clip
+```
