@@ -79,3 +79,9 @@ sudo systemctl restart php7.0-fpm
 ```
 tail -f /var/log/nginx/error.log
 ```
+
+**find dir**
+
+```
+find / -type d -name 'www'
+```
