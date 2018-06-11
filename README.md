@@ -61,3 +61,21 @@ alias restartnginx='sudo systemctl reload nginx'
 ```
 alias getcd=cd $b clip
 ```
+
+**edit nginx conf**
+
+```
+sudo nano /etc/nginx/sites-available/default
+```
+
+**restart php7**
+
+```
+sudo systemctl restart php7.0-fpm
+```
+
+**check nginx logs**
+
+```
+tail -f /var/log/nginx/error.log
+```
