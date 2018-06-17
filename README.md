@@ -85,3 +85,23 @@ tail -f /var/log/nginx/error.log
 ```
 find / -type d -name 'www'
 ```
+
+**Allow sh script to handle crlf char**
+
+```
+bash <(dos2unix < script.sh)
+```
+
+**List ip table**
+
+```
+iptables -L -n -v
+```
+
+**Block ip**
+
+```
+iptables -A INPUT -s *.*.*.* -j DROP
+```
+
+[here is more about iptables](http://www.pettingers.org/code/firewall.html)
