@@ -104,4 +104,10 @@ iptables -L -n -v
 iptables -A INPUT -s *.*.*.* -j DROP
 ```
 
+**public IP**
+
+```
+alias ip=curl ipinfo.io/ip
+```
+
 [here is more about iptables](http://www.pettingers.org/code/firewall.html)
