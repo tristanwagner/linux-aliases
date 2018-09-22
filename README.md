@@ -111,3 +111,23 @@ alias ip=curl ipinfo.io/ip
 ```
 
 [here is more about iptables](http://www.pettingers.org/code/firewall.html)
+
+
+**look for files related to program**
+
+You can use lsof (list of open files) in most cases to find open log files without knowing the configuration.
+
+Example:
+
+Find the PID of httpd (same concept applies for nginx and other programs):
+
+$ ps aux | grep httpd
+...
+root     17970  0.0  0.3 495964 64388 ?        Ssl  Oct29   3:45 /usr/sbin/httpd
+...
+Then search for open log files using lsof with the PID:
+
+$ lsof -p 17970 | grep log
+httpd   17970 root    2w   REG             253,15     2278      6723 /var/log/httpd/error_log
+httpd   17970 root   12w   REG             253,15        0      1387 /var/log/httpd/access_log
+If lsof prints nothing, even though you expected the log files to be found, issue the same command using sudo.
