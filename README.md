@@ -135,3 +135,19 @@ httpd   17970 root    2w   REG             253,15     2278      6723 /var/log/ht
 httpd   17970 root   12w   REG             253,15        0      1387 /var/log/httpd/access_log
 ```
 If lsof prints nothing, even though you expected the log files to be found, issue the same command using sudo.
+
+
+**start process in background, log to file and save pid**
+
+```
+nohup <script> >> script.log 2>&1 &
+echo $! > save_pid.txt
+less +F script.log
+```
+
+**stop process**
+
+```
+kill -9 `cat save_pid.txt`
+rm save_pid.txt
+```
