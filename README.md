@@ -162,7 +162,7 @@ mkdir -p /mnt/ram
 mount -t tmpfs tmpfs /mnt/ram -o size=8192M
 
 # 4. don't add command to history (note the leading space)
- ls -l
+ ls -l *
 
 # 5. fix a really long command that you messed up
 fc
@@ -178,3 +178,7 @@ cat file | tee -a log | cat > /dev/null
 
 # bonus: exit terminal but leave all processes running
 disown -a && exit
+
+run previous command in bg
+bg
+
