@@ -180,5 +180,6 @@ cat file | tee -a log | cat > /dev/null
 disown -a && exit
 
 run previous command in bg
-bg
+
+bg=!! &
 
