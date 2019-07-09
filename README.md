@@ -183,3 +183,6 @@ run previous command in bg
 
 bg=!! &
 
+dl youtube playlist
+
+ youtube-dl -i -x -o "C:/Users/smth/Music/playlist/%(title)s.%(ext)s" --download-archive archive.txt --print-json https://www.youtube.com/playlist?list=PLgoQfvroN35gXaaxMJ2Ce-4aNP1GTlAiz > list.json
