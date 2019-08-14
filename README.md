@@ -190,3 +190,12 @@ bg=!! &
  ### git debug
  
  $ GIT_TRACE=1 git
+ 
+ 
+ ### example of searching some string in folders and output filename sorted by occurences desc
+ 
+ ag lol -c | sort -r -t':' -k2
+ 
+ could pipe that to grep to filter for example file extension
+ 
+  ag lol -c | sort -r -t':' -k2 | grep '\.js'
