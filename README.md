@@ -199,3 +199,7 @@ bg=!! &
  could pipe that to grep to filter for example file extension
  
   ag lol -c | sort -r -t':' -k2 | grep '\.js'
+  
+  how much file contains it ? 
+  
+   ag lol -c | wc -l
