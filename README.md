@@ -1,5 +1,13 @@
 # linux-aliases
 
+Suspend for example vim in terminal 
+
+Ctrl + Z
+
+To resume it use fg command
+
+you can do it also directly with %, or %1, %2 etc depending on the queue
+ 
 ---
 
 **Output mongodb logs**
