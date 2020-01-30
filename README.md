@@ -1,24 +1,24 @@
 # linux-aliases
 
-##pull changes from remote while keeping local changes
+## pull changes from remote while keeping local changes
 
 git stash
 git reset --hard origin/<branch>
 git stash pop
  
-##simple rebase 
+## simple rebase 
 
-git rebase <branch to rebase onto>
+git rebase < branch to rebase onto >
 
-##merge in branch with commit
+## merge in branch with commit
 
 checkout the main branch
 
-git checkout <mainbranch>
+git checkout < main branch >
  
-git merge --no-ff <branch to be merged>
+git merge --no-ff < branch to be merged >
 
-##Suspend for example vim in terminal 
+## Suspend for example vim in terminal 
 
 Ctrl + Z
 
