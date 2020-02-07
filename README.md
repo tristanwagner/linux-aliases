@@ -1,5 +1,19 @@
 # linux-aliases
 
+## cut 4kb of random and but it inside a file
+
+dd if=/dev/urandom of=~/urandom_test count=4 bs=1024
+
+## change data representation with od
+
+od -d /dev/random
+
+try with -h for hexa etc..
+
+## generate token random
+
+dd if=/dev/urandom  count=1 bs=128 | sha512sum
+
 ## pull changes from remote while keeping local changes
 
 git stash
